@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Orbitron:wght@400..900&family=Parkinsans:wght@300..800&display=swap');
+    </style>   
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Get Weather</h1>
+        </header>
+
+        <div class="container-search">
+            <input
+                type="text"
+                name="location"
+                id="location-input"
+                placeholder="Enter location"
+                required
+            />
+            <button type="button" class="button-search" data-search-button>
+                Search
+            </button>
+        </div>
+
+        <div class="unit-toggle-container">
+            <label for="unit-toggle">Temp Unit:</label>
+            <select id="unit-toggle" data-unit-toggle>
+                <option value="C" selected>Celsius</option>
+                <option value="F">Fahrenheit</option>
+            </select>
+        </div>
+
+        <div class="container-weather" data-container-weather>
+            <div data-weather-content></div>
+            <div class="container-error" data-error-container></div>
+        </div>
+
+        <template data-weather-template>
+            <div class="container-weather-data">
+                <h2 class="weather-title" data-weather-title>
+                    The weather today in London
+                </h2>
+                <div class="container-content">
+                    <img
+                        src="#"
+                        alt="Weather Icon"
+                        class="weather-icon"
+                        data-weather-icon
+                    />
+                    <div class="weather-text">
+                        <h3 class="weather-description" data-weather-description></h3>
+                        <div class="weather-data">
+                            <p data-temp></p>
+                            <p data-wind-speed></p>
+                            <p data-max-temp></p>
+                            <p data-rain-prob></p>
+                            <p data-min-temp></p>
+                            <p data-humidity></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+</body>
+</html>

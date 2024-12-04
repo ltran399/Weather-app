@@ -1,0 +1,145 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	height: 100vh;
+	background-color: #f9f7f3;
+	font-family: "Outfit";
+}
+
+h1 {
+	font-size: 4rem;
+	padding-bottom: 5%;
+}
+
+input {
+	padding: 5px;
+	border-radius: 5px;
+	width: 100%;
+	border: 2px solid #0fa3b1;
+}
+
+button {
+	padding: 5px 25px;
+	border-radius: 5px;
+}
+
+.container {
+	padding-top: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Search Container */
+
+.container-search {
+	width: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	padding-bottom: 5%;
+}
+
+.button-search {
+	background-color: #b5e2fa;
+	border: 2px solid #0fa3b1;
+	cursor: pointer;
+}
+
+.button-search:hover {
+	border: 2px solid #f7a072;
+}
+
+/* Weather Container */
+
+.container-weather {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+}
+
+.container-weather-data {
+	background-color: #f5f8fa;
+	width: fit-content;
+	padding: 6%;
+	border-radius: 10px;
+	border: 2px solid #0fa3b1;
+	box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.container-content {
+	display: flex;
+	justify-content: space-between;
+	gap: 2%;
+}
+
+.weather-title {
+	font-size: 3rem;
+	padding-bottom: 6%;
+	text-wrap: nowrap;
+	text-decoration: underline;
+	color: #272e7a;
+	text-align: center;
+}
+
+.weather-icon {
+	width: 25%;
+	border: 2px solid #f7a072;
+	padding: 2%;
+	border-radius: 10px;
+	background-color: #fbfbff;
+}
+
+/* Contains the text data */
+.weather-text {
+	background-color: #fbfbff;
+	border: 2px solid #f7a072;
+	padding: 2%;
+	border-radius: 10px;
+	width: 100%;
+}
+
+.weather-description {
+	font-size: 1.4rem;
+	padding-bottom: 2%;
+}
+
+.weather-data {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	font-size: 1.25rem;
+}
+
+.weather-data p {
+	padding: 4% 0;
+}
+
+/* Error Message */
+
+.container-error {
+	background-color: #f77272;
+	width: fit-content;
+	padding: 6%;
+	border-radius: 10px;
+	border: 2px solid #f7a072;
+	box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+	font-size: 2rem;
+	color: #f5f8fa;
+	display: none;
+}
+
+/* Unit select */
+.unit-toggle-container {
+	position: fixed; /* Fix it to the viewport */
+	top: 0; /* Align to the top */
+	right: 0; /* Align to the right */
+	background-color: #eddea4; /* Optional: Make it stand out */
+	padding: 8px;
+	z-index: 1000; /* Ensure it appears on top of other elements */
+	border-bottom-left-radius: 10px;
+}
